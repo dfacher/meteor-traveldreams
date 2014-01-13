@@ -7,7 +7,7 @@ Template.maps.rendered =function() {
     GoogleMaps.init(
         {
             'sensor': true, //optional
-            'key': 'AIzaSyCe6OMRdS0ILwXGk4oamtLFntDWm71k-aI', //optional
+            'key': 'YOUR KEY', //optional
             'language': 'en' //optional
         }, 
         function(){
