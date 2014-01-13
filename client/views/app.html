@@ -1,0 +1,72 @@
+<template name="dreamList">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+              
+      <!-- Table -->
+      <table class="table" id="items-list">
+        <thead class="dreamTableHead">
+            <tr>
+                <th>Activity</th>
+                <th>Created</th>
+                <th>Location</th>
+                <th>Importance</th>
+                <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each dream}}
+                {{> dreamItem}}
+            {{/each}}
+          </tbody>
+      </table>
+    </div>    
+</template>
+
+<template name="dreamItem">
+    <tr class="dream {{done_class}}">
+        <td>
+            {{#if editing '#activity-input'}}
+                <div class="edit">
+                    <input id="activity-input" type="text" value="{{activity}}" />
+                </div>
+            {{else}}
+            <div class="display">
+                <span class="glyphicon glyphicon-remove-circle"></span>
+                <span class="activity-text">{{activity}}</span>
+            </div>
+             {{/if}}
+        </td>
+        
+        <td>
+            {{dateToTable created}}
+        </td>
+        
+        <td>         
+            <div class="location">
+                <span class="glyphicon glyphicon-map-marker {{#if hasLocation}}location{{/if}}"></span>
+                {{#if editing '#location-input'}}
+                    <span><div class="edit">
+                        <input id="location-input" type="text" value="{{location}}" />
+                    </div></span>
+                {{else}}
+                    {{#if hasLocation}}
+                        <span class="display location-text"> {{location}}</span>
+                    {{/if}}        
+                {{/if}}
+            </div>
+        </td>
+        <td>
+            <span class="star-rating" id="{{_id}}" style="background-image:url({{starImg}});">
+              <input type="radio" name="rating" value="1"><i></i>
+              <input type="radio" name="rating" value="2"><i></i>
+              <input type="radio" name="rating" value="3"><i></i>
+            </span>
+        </td>
+        <td>
+            <span class="glyphicon glyphicon-ok-sign {{{done_checkbox}}}"></span>
+            {{#if done}}    
+                <span>{{dateToTable doneDate}}</span>
+            {{/if}}
+        </td>
+    </tr>
+</template>

@@ -1,0 +1,1 @@
+Dreams = new Meteor.Collection('dreams');

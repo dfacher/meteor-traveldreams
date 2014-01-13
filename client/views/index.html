@@ -1,0 +1,54 @@
+<head>
+    <title>Our Dreams</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <div class="container">
+        {{> navbar}}
+    </div>
+
+    <div class="container">
+        <div id="main" class="row-fluid">
+            {{> dreamList}}   
+        </div>
+    </div>
+    
+    <div class="container" id="mapsContainer">
+        {{> maps}}
+    </div>
+    
+</body>
+
+
+<template name="navbar">
+    <!-- Static navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><h2>Our dreams</h2></a>
+        </div>
+    
+        <div class="navbar-collapse collapse">
+            <div class="nav  navbar-right">
+                <form class="main">
+                    <div class="input-group" id="newDreamForm">
+                      <input type="text" class="form-control" name= "newDreamInputActivity" id="newDreamInput" placeholder="Add new dream...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="newDreamButton">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </button>
+                      </span>
+                    </div><!-- /input-group -->
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</template>

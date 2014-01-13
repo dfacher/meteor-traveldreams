@@ -1,0 +1,296 @@
+/* ==========================================================================
+   General
+   ========================================================================== */
+.grid-block, .comments li, .comment-form {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+body {
+  padding-top: 50px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.navbar {
+    background: #f2f2f2;
+  margin-bottom: 10px; }
+  .navbar .navbar-inner {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -ms-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px; }
+
+.nav.navbar-right {
+  margin-top: 17px;  
+}
+
+.navbar h2 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.activity-text{
+    font-weight:bold;
+}
+
+.dreamTableHead{
+    background-color: #f2f2f2;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+a {
+    color: #3bc492;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Action icons
+   ========================================================================== */
+
+.glyphicon{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.glyphicon.glyphicon-ok-sign.checked{
+    color: #008A2E;
+}
+
+.dream.done {
+    color: #989898;
+}
+
+.glyphicon.glyphicon-remove-circle {
+    font-size: 16px;
+    color: #FFEBEB;
+}
+
+.glyphicon.glyphicon-remove-circle:hover {
+    color: #CC0000;
+}
+
+.glyphicon.glyphicon-map-marker.location {
+    color: #2E8AE6;
+}
+
+/* ==========================================================================
+   Icons Depr.!!
+   ========================================================================== */
+
+#items-view {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.dream {
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+
+.dream .destroy {
+    cursor: pointer;
+    left: 5px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+#item-list .dream .display, #item-list .dream .edit {
+    margin-left: 30px;
+    height: 100%;
+    width: auto;
+    float: left;
+    padding-top: 18px;
+    line-height: 1;
+}
+
+#dream-input {
+    width: 300px;
+    position: relative;
+    top: -3px;
+}
+
+
+#item-list .dream .check {
+    float: left;
+    width: 25px;
+}
+
+#item-list .dream .dream-text {
+    float: left;
+    margin-left: 10px;
+    font-size: 100%;
+}
+
+#item-list .dream .edit input {
+    margin-left: 35px;
+}
+
+#edittag-input {
+    width: 80px;
+}
+
+/* ==========================================================================
+   Star Rating
+   ========================================================================== */
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 75px;
+  height: 25px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+  cursor: pointer;
+    
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 33%;
+  z-index: 1;
+  background:               url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+.star-rating i ~ i {
+  width: 66%;
+}
+.star-rating i ~ i ~ i {
+  width: 100%;
+}
+
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.form-control {
+	padding: 18.5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+#newDreamForm {
+   width: 250px; 
+}
+
+.form-group label {
+	font-family: 'Raleway'; sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.btn-theme {
+	color: #fff;
+	background-color: #1abc9c;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: 700;
+	border-radius: 3px;
+}
+
+.btn-theme:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #16a085;
+	
+}
+
+/* ==========================================================================
+   Maps
+   ========================================================================== */
+
+html { 
+    height: 100%; 
+}
+
+body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+#mapsContainer {
+   height: 450px; 
+}
+
+#map-canvas { 
+    height: 100%;
+}
